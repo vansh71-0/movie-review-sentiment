@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+nltk
+pandas
+scikit-learn
+nltk
+pickle
+re
