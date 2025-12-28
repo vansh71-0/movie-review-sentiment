@@ -5,6 +5,7 @@ import pickle
 import pandas as pd
 import re
 from nltk.stem import WordNetLemmatizer
+import os
 
 # for UI:-
 from fastapi.templating import Jinja2Templates
@@ -62,5 +63,5 @@ def predict_ui(request: Request, text: str = Form(...)):
         }
     )
 if __name__ == "__main__":
-
+    port = int(os.environ.get("PORT", 8000))
     uvicorn.run(app, host="0.0.0.0", port=port)
