@@ -4,5 +4,3 @@ nltk
 pandas
 scikit-learn
 nltk
-pickle
-re
