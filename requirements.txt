@@ -6,3 +6,4 @@ pandas
 scikit-learn
 nltk
 python-multipart
+jinja2
