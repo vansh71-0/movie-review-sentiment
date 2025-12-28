@@ -11,6 +11,11 @@ from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
 from fastapi import Request, Form
 
+import nltk
+
+nltk.download('stopwords')
+nltk.download('wordnet')
+
 
 
 app = FastAPI(title="IMDB Sentiment Analysis API")
